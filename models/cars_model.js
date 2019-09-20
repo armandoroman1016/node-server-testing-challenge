@@ -18,10 +18,12 @@ function add(values){
     })
 }
 
-function remove(){
-    
+function remove(id){
+    return db('cars')
+    .where({id: id})
+    .delete();
 }
 
 function find(){
-    
+    return db('cars')
 }
