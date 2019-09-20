@@ -8,6 +8,12 @@ describe('server', () => {
                 .get('/')
                     .then( res => {
                         expect(res.status).toBe(200)
+                    })
+        })
+        it('returns { message: "welcome" }', () => {
+            return request(server)
+                .get('/')
+                    .then( res => {
                         expect(res.body).toEqual({message: 'welcome'})
                     })
         })
