@@ -25,5 +25,5 @@ function remove(id){
 }
 
 function find(){
-    return db('cars')
+    return db('cars');
 }
